@@ -5,6 +5,7 @@ import axios from 'axios';
 const instance = axios.create({
   baseURL: BASE_URL,
   timeout: TIMEOUT,
+  // withCredentials: true,
 });
 
 instance.interceptors.request.use(config => {
